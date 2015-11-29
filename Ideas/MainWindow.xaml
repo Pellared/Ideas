@@ -8,6 +8,37 @@
         mc:Ignorable="d"
         Title="Ideas" Height="600" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="500" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1" Margin="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Width="40">ID</Label>
+                <TextBox IsReadOnly="True" Grid.Column="1" FontWeight="Bold" SpellCheck.IsEnabled="True" >123</TextBox>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Width="40">TITLE</Label>
+                <TextBox Grid.Column="1" FontWeight="Bold" SpellCheck.IsEnabled="True" >External API</TextBox>
+            </Grid>
+            <Label>PROBLEM</Label>
+            <TextBox TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" MinLines="5" MaxLines="5" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                There is a need to access to data from other application
+            </TextBox>
+            <Label>SOLUTION</Label>
+            <TextBox TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" MinLines="5" MaxLines="5">
+                Make a REST OData API
+            </TextBox>
+            <Button>TEST</Button>
+        </StackPanel>
     </Grid>
 </controls:MetroWindow>
