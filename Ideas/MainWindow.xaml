@@ -39,11 +39,11 @@
                 <TextBox Grid.Column="1" FontWeight="Bold" SpellCheck.IsEnabled="True" >External API</TextBox>
             </Grid>
             <Label Grid.Row="2">PROBLEM</Label>
-            <TextBox Grid.Row="3" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" MinLines="5" MaxLines="5" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <TextBox Grid.Row="3" TextWrapping="Wrap" SpellCheck.IsEnabled="True" AcceptsReturn="True" AcceptsTab="True" MinLines="5" MaxLines="5" ScrollViewer.VerticalScrollBarVisibility="Auto">
                 There is a need to access to data from other application
             </TextBox>
             <Label Grid.Row="4">SOLUTION</Label>
-            <TextBox Grid.Row="5" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" MinLines="5" MaxLines="5">
+            <TextBox Grid.Row="5" SpellCheck.IsEnabled="True" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" MinLines="5" MaxLines="5">
                 Make a REST OData API
             </TextBox>
         </Grid>
