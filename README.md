@@ -1,0 +1,2 @@
+# Ideas
+WPF, Rx, ReactiveProperty
